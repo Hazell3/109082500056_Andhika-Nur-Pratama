@@ -1,4 +1,5 @@
 package main
+
 import "fmt"
 
 func main() {
@@ -16,11 +17,11 @@ func main() {
 	if kg > 10 {
 		biayaSisa = 0
 	} else {
-		if sisa < 500 {
-				biayaSisa =  sisa * 5
+		if sisa >= 500 {
+			biayaSisa = sisa * 5
 		} else {
-				biayaSisa = sisa * 15
-			}
+			biayaSisa = sisa * 15
+		}
 	}
 	total := biayaKg + biayaSisa
 
