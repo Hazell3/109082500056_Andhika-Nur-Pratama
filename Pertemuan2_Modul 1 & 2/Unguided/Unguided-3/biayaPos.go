@@ -11,22 +11,22 @@ func main() {
 	kg := gram / 1000
 	sisa := gram % 1000
 
-	biayaKg := kg * 10000
-	biayaSisa := 0
+	berat := kg * 10000
+	ongkir := 0
 
 	if kg > 10 {
-		biayaSisa = 0
+		ongkir = 0
 	} else {
 		if sisa >= 500 {
-			biayaSisa = sisa * 5
+			ongkir = sisa * 5
 		} else {
-			biayaSisa = sisa * 15
+			ongkir = sisa * 15
 		}
 	}
-	total := biayaKg + biayaSisa
+	total := berat + ongkir
 
 	fmt.Println("\n===== Detail Perhitungan =====")
 	fmt.Println("Detail Berat: ", kg, "Kg +", sisa, "gram")
-	fmt.Println("Detail Biaya: Rp.", biayaKg, "+ Rp.", biayaSisa)
+	fmt.Println("Detail Biaya: Rp.", berat, "+ Rp.", ongkir)
 	fmt.Println("Total Biaya: Rp", total)
 }
