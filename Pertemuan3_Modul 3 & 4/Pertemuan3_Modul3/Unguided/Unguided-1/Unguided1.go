@@ -23,6 +23,6 @@ func main() {
 	fmt.Print("Masukkan Angka: ")
 	fmt.Scan(&a, &b, &c, &d)
 
-	fmt.Println("Hasil: ", permutasi(a, c), kombinasi(a, c))
+	fmt.Println(permutasi(a, c), kombinasi(a, c))
 	fmt.Println(permutasi(b, d), kombinasi(b, d))
 }
